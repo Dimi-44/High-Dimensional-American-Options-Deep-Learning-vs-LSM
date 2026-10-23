@@ -27,7 +27,7 @@ where each asset follows a geometric Brownian motion under $\mathbb{Q}$ with div
 Lattices and PDE grids need a number of points that grows exponentially with $d$, so beyond 2 or 3 assets the only practical tool is Monte Carlo simulation. Monte Carlo alone is not enough, though: at every exercise date we must decide whether to stop, and that requires the **continuation value**
 
 $$
-C_n(s) = \mathbb{E}^{\mathbb{Q}}\!\left[e^{-r(t_{n+1}-t_n)}\, V_{n+1} \,\middle|\, S_{t_n} = s\right].
+C_n(s) = \mathbb{E}^{\mathbb{Q}}\left[e^{-r(t_{n+1}-t_n)}\, V_{n+1} \,\middle|\, S_{t_n} = s\right].
 $$
 
 ## 2. Methods
